@@ -1,0 +1,201 @@
+<style>
+	hr {
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+		border: 0;
+		border-top: 1px solid rgba(0, 0, 0, 0.1);
+	} 
+</style>
+<br>
+<h5>Add Product</h5>
+<div class="card border-muted mb-3" style="max-width: 40rem;">
+	<div class="card-body text-secondary">
+		<form>
+			<div class="form-group">
+				<label for="title">Title</label>
+				<input type="title" class="form-control" id="title" aria-describedby="title" placeholder="Enter Title">
+			</div>
+			<div class="form-group">
+				<label for="description">Description</label>
+				<textarea class="form-control"  type="description" id="description" placeholder="description"></textarea>
+			</div>
+		</form>
+	</div>
+</div>
+
+<div class="card border-muted mb-3" style="max-width: 40rem;">
+	<div class="card-body text-secondary">
+		<form>
+			<div class="form-group">
+				<label for="media">Media</label>
+				<div class="card border-muted mb-3" style="max-width: 40rem;">
+					<div class="card-body text-secondary">
+						<button type="submit" class="btn btn-primary" >Add File</button>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>
+
+<div class="card border-muted mb-3" style="max-width: 40rem;">
+	<div class="card-body text-secondary">
+		<form>
+			<div class="form-group">
+				<label for="pricing">Pricing</label>
+				</div>
+			<div class="row">
+				<div class="col-sm">
+					<label for="price">Price</label>
+					<input type="price" class="form-control" id="price" aria-describedby="price" placeholder="Enter price">
+				</div>
+				<div class="col-sm">
+					<label for="compare_price">Compare at Price</label>
+					<input type="compare_price" class="form-control" id="compare_price" aria-describedby="price" placeholder="Enter compare price">
+				</div>
+			</div>
+			<hr />
+			<div class="row">
+				<div class="col-sm">
+					<label for="cost_item">Cost per Item</label>
+					<input type="cost_item" class="form-control" id="cost_item" aria-describedby="cost_item" placeholder="Enter cost item">
+				</div>
+				<div class="col-sm">
+					<label for="margin">Margin</label>	     		
+					<label for="profit">Profit</label>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>
+
+<div class="card border-muted mb-3" style="max-width: 40rem;">
+	<div class="card-body text-secondary">
+		<form>
+			<div class="form-group">
+				<label for="inventory">Inventory</label>
+					</div>
+			<div class="row">
+				<div class="col-sm">
+					<label for="sku">SKU (Stock Keeping Unit)</label>
+					<input type="sku" class="form-control" id="sku" aria-describedby="sku" placeholder="Enter sku">
+				</div>
+				<div class="col-sm">
+					<label for="barcode">Barcode (ISBN, UPC, GTIN, etc.)</label>
+					<input type="barcode" class="form-control" id="barcode" aria-describedby="barcode" placeholder="Enter barcode">
+				</div>
+			</div>
+			<br>
+			<div class="row">
+				<div class="col-sm">
+					<div class="form-check form-check-inline">
+						<input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+						<label class="form-check-label" for="inlineCheckbox1">Track Quantity</label>
+					</div>
+				</div>
+				<div class="col-sm">
+					<div class="form-check form-check-inline">
+						<input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option2">
+						<label class="form-check-label" for="inlineCheckbox1"> Continue selling when out of stock</label>
+					</div>
+				</div>
+			</div>
+			<hr/>
+			<div class="row">
+				<div class="col-sm">
+					<label for="quantity">Quantity</label>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm">
+					<label for="available">Available</label>
+					<select class="custom-select mr-sm" id="inlineFormCustomSelect"></select>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+  
+
+   <div class="card border-muted mb-3" style="max-width: 40rem;">
+	<div class="card-body text-secondary">
+		<form>
+			<div class="form-group">
+		       <label for="shipping">Shipping</label>
+	        </div>
+		<div class="form-check form-check-inline">
+			<input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option2">
+			<label class="form-check-label" for="inlineCheckbox1"> This is a physical product</label>
+		</div>
+		<hr/>
+		<div class="form-group">
+		    <label for="weight">Weight</label>
+		    <p>Used to calculate shipping rates at checkout and label prices during fulfillment.</p>
+		    <label for="weight">Weight</label>
+			 <select class="custom-select mr-sm" id="inlineFormCustomSelect"></select>
+	     </div>
+	    <hr />
+	    <div class="form-group">
+		    <label for="customs_inf">Customs Information</label>
+		    <p>Used by border officers to calculate duties when shipping internationally. Shown on customs forms you print during fulfillment.</p>
+		    <label for="country">Country of origin</label>
+			 <select class="custom-select mr-sm" id="inlineFormCustomSelect"></select>
+			 <p>In most cases, where the product is manufactured.</p>
+	     </div>
+	      <div class="form-group">
+		    <label for="hs">Hs(Harmonized System) code</label>
+		  
+			 <select class="custom-select mr-sm" id="inlineFormCustomSelect"></select>
+			 <p>Used by border officers to classify this product..</p>
+	     </div>
+   </form>
+	</div>
+</div>
+<div class="card border-muted mb-3" style="max-width: 40rem;">
+	<div class="card-body text-secondary">
+		<form>
+			<div class="form-group">
+				<label for="Variants">Variants</label>
+				
+			</div>
+			<div class="form-check form-check-inline">
+						<input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+						<label class="form-check-label" for="inlineCheckbox1">This product has multiple options, like different sizes or colors</label>
+			</div>
+			<hr/>
+			<div class="form-group">
+				<label for="options">Options</label>
+				
+			</div>
+			<div class="row">
+				<div class="col-sm">
+					 <label for="option1">Option 1</label>
+					<input type="size" class="form-control" id="size" aria-describedby="size" placeholder="Separated options with a comma">
+				</div>
+				
+			</div>
+			<hr />
+			<div class="card-body text-secondary">
+				<button type="submit" class="btn btn-primary" >Add Another Options</button>
+			</div>
+
+		</form>
+	</div>
+</div>
+
+<div class="card border-muted mb-3" style="max-width: 40rem;">
+	<div class="card-body text-secondary">
+		<form>
+			<div class="row">
+				<div class="col-sm">
+					 <label for="search">Search engine listing preview</label>
+					<p>Add a title and description to see how this product might appear in a search engine listing</p>
+				</div>
+				
+			</div>
+		
+		</form>
+	</div>
+</div>
+<hr />
+<button type="submit" class="btn btn-primary" >Save</button>
